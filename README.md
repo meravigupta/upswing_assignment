@@ -1,4 +1,4 @@
-*** MQ Status Monitoring System
+## MQ Status Monitoring System ##
 This project consists of a set of Python scripts that implement a basic message queue system using RabbitMQ and MongoDB. The system includes a producer that sends status messages, a consumer that processes these messages and stores them in a MongoDB collection with a timestamp, and a FastAPI application that allows querying the stored status data.
 
 ## Files ##
@@ -6,16 +6,16 @@ This project consists of a set of Python scripts that implement a basic message 
 * producer.py: Generates and publishes status messages to the RabbitMQ queue.
 * fastAPIapp.py: A FastAPI application that provides an API to query the stored status data based on a time range.
 
-*** Requirements
+## Requirements ##
 To run this project, you need to have the following software installed:
 
-** Python 3.9+
-** RabbitMQ
-** MongoDB
+* Python 3.9+
+* RabbitMQ
+* MongoDB
 
 You can install the required Python packages using the requirements.txt file provided.
 
-*** Setup
+## Setup ##
 1. Install dependencies:
 pip install -r requirements.txt
 
@@ -25,7 +25,7 @@ Make sure the RabbitMQ server is running on localhost.
 3. Start MongoDB Server:
 Make sure the MongoDB server is running on localhost.
 
-*** Running the Scripts
+## Running the Scripts ##
 1. Start the Producer:
 python producer.py
 
@@ -35,9 +35,9 @@ python consumer.py
 3. Start the FastAPI Application:
 uvicorn fastAPIapp:app --reload
 
-The FastAPI application will be available at http://localhost:8000.
+# Note #: The FastAPI application will be available at http://localhost:8000.
 
-Author
+# Author #
 Ravi G%upta
 
 *** Running the Scripts
