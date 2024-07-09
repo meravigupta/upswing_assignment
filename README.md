@@ -35,7 +35,7 @@ python consumer.py
 3. Start the FastAPI Application:
 uvicorn fastAPIapp:app --reload
 
-## Note ## : The FastAPI application will be available at http://localhost:8000.
+## Note : The FastAPI application will be available at http://localhost:8000.
 
 ## Author ##
 Ravi Gupta
