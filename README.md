@@ -37,10 +37,25 @@ uvicorn fastAPIapp:app --reload
 
 ## Note : The FastAPI application will be available at http://localhost:8000.
 
+## API Endpoint ##
+* POST /status-count/: Retrieves the count of statuses within a specified time range.
+
+Request body:
+{
+  "start_time": "2023-01-01T00:00:00",
+  "end_time": "2023-01-02T00:00:00"
+}
+
+Response:
+{
+  "status_1": 10,
+  "status_2": 15
+}
+
+
 ## Author ##
 Ravi Gupta
 
-*** Running the Scripts
 
 
 
